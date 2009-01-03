@@ -1,6 +1,6 @@
 
 %define realname   Parse-ErrorString-Perl
-%define version    0.09
+%define version    0.11
 %define release    %mkrel 1
 
 Name:       perl-%{realname}
