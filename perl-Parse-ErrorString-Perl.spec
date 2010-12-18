@@ -1,5 +1,5 @@
 %define upstream_name    Parse-ErrorString-Perl
-%define upstream_version 0.13
+%define upstream_version 0.15
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -27,15 +27,15 @@ Module to parse error messages from the perl interpreter.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Build.PL installdirs=vendor
-./Build
+%{__perl} Makefile.PL INSTALLDIRS=vendor
+%make
 
 %check
-#./Build test
+%make test
 
 %install
 rm -rf %buildroot
-./Build install --destdir %buildroot
+%makeinstall_std
 
 %clean
 rm -rf %buildroot
