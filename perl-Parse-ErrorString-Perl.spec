@@ -1,15 +1,15 @@
 %define upstream_name    Parse-ErrorString-Perl
-%define upstream_version 0.15
+%define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Parse error messages from the perl interpreter
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Parse/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-ErrorString-Perl-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -38,7 +38,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %files
-%doc README Changes
+%doc  Changes
 %{_bindir}/check_perldiag
 %{_mandir}/man1/*
 %{_mandir}/man3/*
@@ -81,4 +81,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue Dec 30 2008 jquelin 0.08-1mdv
 - initial mdv release
+
 
