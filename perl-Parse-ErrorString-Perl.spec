@@ -1,5 +1,5 @@
 %define upstream_name    Parse-ErrorString-Perl
-%define upstream_version 0.19
+%define upstream_version 0.20
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -81,5 +81,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue Dec 30 2008 jquelin 0.08-1mdv
 - initial mdv release
+
 
 
