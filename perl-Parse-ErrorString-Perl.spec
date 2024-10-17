@@ -8,7 +8,7 @@ Release:	3
 Summary:	Parse error messages from the perl interpreter
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-ErrorString-Perl-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
