@@ -1,15 +1,15 @@
 %define upstream_name    Parse-ErrorString-Perl
-%define upstream_version 0.20
+%define upstream_version 0.27
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Parse error messages from the perl interpreter
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Parse/Parse-ErrorString-Perl-%{upstream_version}.tar.gz
+Url:		https://github.com/PadreIDE/Parse-ErrorString-Perl
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Parse-ErrorString-Perl-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
