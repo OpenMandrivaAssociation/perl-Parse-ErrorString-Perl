@@ -1,15 +1,13 @@
 %define upstream_name    Parse-ErrorString-Perl
-%define upstream_version 0.27
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.27
+Release:	2
 
 Summary:	Parse error messages from the perl interpreter
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/PadreIDE/Parse-ErrorString-Perl
-Source0:	https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Parse-ErrorString-Perl-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Parse-ErrorString-Perl-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ Module to parse error messages from the perl interpreter.
 
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -56,8 +54,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.130.0-1mdv2010.0
 + Revision: 401617
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %0.27 fixed license field
 
 * Tue Feb 10 2009 Jérôme Quelin <jquelin@mandriva.org> 0.13-1mdv2009.1
 + Revision: 339096
